@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Noto+Sans+JP:wght@200&family=Raleway:wght@100&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Noto+Sans+JP:wght@200&family=Raleway:wght@100&family=Roboto:wght@300&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.title{
+    background-color: rgba(28, 28, 28, 0.495);
+    line-height: 6vh;
+    padding: 0 15px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    
+}
+.gamecontainer{
+    margin-top: 60px;  
+    display: flex;
+    justify-content: center;
+    
+}
+.game{
+    display: grid;
+    grid-template-rows: repeat(3, 10vw);
+    grid-template-columns: repeat(3, 10vw);
+    position: relative;
+    
+}
+.box{
+    border: 2px solid black;
+    font-size: 7vw;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+}
+.box:hover{
+    background-color: rgb(229, 219, 239);
+}
+.info{
+    padding: 0 100px;
+    font-family: 'Montserrat', sans-serif;
+font-family: 'Noto Sans JP', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+.imgbox img{
+    width: 0;
+    height: 0;
+    transition: width 1s ease-in-out;
+}
+
+.bt-0{
+    border-top: 0;
+  
+}
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+
+.bb-0{
+    border-bottom: 0;
+}
+.info h2{
+    font-size: 50px;
+    color: rgb(3, 43, 96);
+}
+.typing{
+    margin-left: 10px;
+    font-size: 30px;
+    line-height: 4vw;
+    color: rgb(132, 17, 171);
+    margin-top: 10px;
+}
+.turn{
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.turn button{
+    font-size: 16px;
+    font-weight: bold;
+    background: rgb(148, 148, 254);
+    width: 100px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.turn button:hover{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.turninfo{
+    font-size: 20px;
+    color: rgb(56, 0, 15);
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 900px)
+{
+    .gamecontainer{
+        flex-wrap: wrap;
+    }
+    .info{
+        margin-top: 35px;
+    }
+    .info h1{
+        font-size: 2.5rem;
+    }
+    .gamecontainer{
+        grid-template-rows: repeat(3, 20vw);
+        grid-template-columns: repeat(3, 20vw);
+    }
+    .info h2{
+        font-size: 30px;
+    }
+    .turn{
+        margin-top: 20px;
+    }
+    .typing{
+        margin-top: 10px;
+    }
+}
